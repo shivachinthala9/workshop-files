@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>Display properties in JSON format:</p>
+
+<p id="demo"></p>
+
+<script>
+
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+const ravi = new Person("ravi", "kumar", 25, "brown")
+
+
+document.getElementById("demo").innerHTML = JSON.stringify(ravi);
+
+// document.getElementById("demo").innerHTML = ravi.name();
+</script>
+
+</body>
+</html>
+
+

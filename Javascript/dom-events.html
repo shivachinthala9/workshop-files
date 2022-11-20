@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+<h1 onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Hover mouse over me</h1>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+
+function mouseOver(obj){
+    obj.innerHTML = "Mouse Hovered"
+}
+
+function mouseOut(obj){
+    obj.innerHTML = "Mouse Left Hover"
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html> 
